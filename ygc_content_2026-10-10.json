@@ -116,8 +116,8 @@
     "quote": "A useful question in a crisis is not only 'What happened?' but also 'What do we know, and how do we know it?'"
   },
   "sports": {
-    "title": "Sports desk: separate the result from the noise",
-    "body": "A good sports report distinguishes the final score from the reasons behind it: injuries, tactics, conditions and decisions can all matter. Before sharing a breaking result, check the competition's official site and at least one reliable report."
+    "title": "Cricket: New Zealand lose a key fast bowler",
+    "body": "<b>New Zealand</b> fast bowler <b>Will O'Rourke</b> has been ruled out of the upcoming India series while he continues rehabilitation for hamstring and calf injuries, Reuters reported. The tour is scheduled to begin with T20 internationals on October 22. His absence is a reminder that recovery plans must balance the urge to return quickly with the risk of another injury."
   },
   "watchlist": [
     "Whether Saudi Arabia and its partners announce a response to the Riyadh airport attack, and whether diplomatic channels remain open.",
@@ -153,6 +153,12 @@
       "title": "India raises policy rate by 25 bps in first hike in nearly four years",
       "url": "https://www.reuters.com/world/india/india-raises-policy-rate-by-25-bps-first-hike-nearly-four-years-2026-10-07/",
       "published": "2026-10-07"
+    },
+    {
+      "outlet": "Reuters",
+      "title": "New Zealand's O'Rourke ruled out of India series",
+      "url": "https://www.reuters.com/sports/cricket/new-zealands-orourke-ruled-out-india-series-2026-10-10/",
+      "published": "2026-10-10"
     }
   ],
   "editorial_note": "Draft assembled from reports available on 2026-10-10. Breaking-news casualty counts and allegations can change; verify all claims against the linked source articles before publication. The map is a schematic locator and the chart compares hurricane categories, not storm-specific measurements."
