@@ -64,9 +64,8 @@
       "headline": "Storm Damage Leaves Communities Without Power",
       "deck": "Hurricane Isaias made landfall in Florida as a Category 2 storm before weakening, while heavy rain and wind continued to threaten parts of the Southeast.",
       "body": [
-        "Hurricane Isaias came ashore near Destin, Florida, as a Category 2 hurricane, AP reported. It later weakened, but heavy rain, fallen trees and power outages continued across parts of the Southeast. Early coverage reported at least four deaths.",
-        "A hurricane category measures sustained wind speed, not every danger. Rain can flood roads, trees can fall, and generators used indoors can cause deadly carbon-monoxide poisoning. Warnings may remain important even after winds weaken.",
-        "Federal disaster aid can support recovery, but residents rely first on local emergency crews and utilities. The priorities are safety, trustworthy information and checking on neighbours who may need help."
+        "Hurricane Isaias came ashore near Destin, Florida, as a Category 2 storm, AP reported. Heavy rain, fallen trees and power outages continued across parts of the Southeast; early coverage reported at least four deaths.",
+        "A hurricane category measures sustained wind, not every danger. Rain can flood roads, trees can fall, and generators used indoors can cause deadly carbon-monoxide poisoning. Follow local warnings even after a storm weakens."
       ],
       "chart": {
         "title": "HURRICANE CATEGORY SCALE",
@@ -84,8 +83,8 @@
         "highlight_after": 0,
         "caption": "Category measures sustained wind only; rainfall and storm surge can also be dangerous. Category 4 is shown for comparison, not as Isaias's category."
       },
-      "why": "Extreme weather becomes a community emergency when hazards meet vulnerable people and infrastructure. Strong building standards, reliable alerts and evacuation plans reduce risk. Climate change can raise the risk of some heavy-rain events, but no single storm proves a long-term trend; scientists study decades of data.",
-      "analyst": "Think like an analyst: a storm category measures wind, but a family's risk may depend more on flooding, housing quality or power access. Which two local facts would you check before deciding a neighbourhood is safe?"
+      "why": "Storms become disasters when hazards meet vulnerable people and infrastructure. Strong building standards, reliable alerts and evacuation plans reduce risk. Climate trends require decades of data; one storm alone cannot prove a long-term pattern.",
+      "analyst": "Think like an analyst: a storm category measures wind, but risk also depends on flooding, housing and power access. What local facts would you check before deciding a neighbourhood is safe?"
     }
   ],
   "briefs": [
@@ -117,11 +116,11 @@
   },
   "sports": {
     "title": "Cricket: New Zealand lose a key fast bowler",
-    "body": "<b>New Zealand</b> fast bowler <b>Will O'Rourke</b> will miss the upcoming India series while recovering from hamstring and calf injuries, Reuters reported. The tour begins October 22."
+    "body": "<b>New Zealand</b> fast bowler <b>Will O'Rourke</b> will miss the India series while recovering from injuries, Reuters reported. The tour begins October 22."
   },
   "watchlist": [
-    "Will Saudi Arabia announce a response to the Riyadh airport attack, or leave room for diplomacy?",
-    "Will Panama's damage assessments reveal new safety risks after the aftershocks?"
+    "Will Saudi Arabia respond to the Riyadh airport attack, or leave room for diplomacy?",
+    "Will Panama's aftershock assessments reveal new safety risks?"
   ],
   "sources": [
     {
