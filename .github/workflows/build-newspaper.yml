@@ -26,21 +26,25 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Install PDF dependency
-        run: python -m pip install --upgrade pip reportlab
+      - name: Install PDF dependencies
+        run: python -m pip install --upgrade pip reportlab pypdf
       - name: Select content file
         id: content
         shell: bash
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "file=${{ inputs.content_file }}" >> "$GITHUB_OUTPUT"
+            FILE="${{ inputs.content_file }}"
           else
-            FILE="$(git diff-tree --no-commit-id --name-only -r "$GITHUB_SHA" | grep -E '^ygc_content_.*\.json$' | head -n 1)"
-            if [ -z "$FILE" ]; then FILE="ygc_content_2026-10-10.json"; fi
-            echo "file=$FILE" >> "$GITHUB_OUTPUT"
+            FILE="$(git ls-files 'ygc_content_*.json' | sort | tail -n 1)"
           fi
+          test -n "$FILE"
+          test -f "$FILE"
+          echo "file=$FILE" >> "$GITHUB_OUTPUT"
+          DATE="$(printf '%s' "$FILE" | grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}' | tail -n 1)"
+          if [ -z "$DATE" ]; then DATE="$(date -u +%Y-%m-%d)"; fi
+          echo "date=$DATE" >> "$GITHUB_OUTPUT"
       - name: Build PDF
-        run: python _template.py "${{ steps.content.outputs.file }}" "Young_Global_Citizen_Daily_$(date -u +%Y-%m-%d).pdf"
+        run: python _template.py "${{ steps.content.outputs.file }}" "Young_Global_Citizen_Daily_${{ steps.content.outputs.date }}.pdf"
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
         with:
