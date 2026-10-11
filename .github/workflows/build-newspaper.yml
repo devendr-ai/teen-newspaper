@@ -45,6 +45,18 @@ jobs:
           echo "date=$DATE" >> "$GITHUB_OUTPUT"
       - name: Build PDF
         run: python _template.py "${{ steps.content.outputs.file }}" "Young_Global_Citizen_Daily_${{ steps.content.outputs.date }}.pdf"
+      - name: Validate rendered PDF text
+        run: |
+          python - <<'PY'
+          from pypdf import PdfReader
+          path = "Young_Global_Citizen_Daily_${{ steps.content.outputs.date }}.pdf"
+          reader = PdfReader(path)
+          assert len(reader.pages) == 2, f"Expected 2 pages, got {len(reader.pages)}"
+          text = "\\n".join(page.extract_text() or "" for page in reader.pages)
+          for marker in ("[IMAGE:", "[CHART:", "[MAP:", "[PHOTO:", "…"):
+              assert marker not in text, f"Found unfinished/truncated content marker: {marker}"
+          print("PDF checks passed: 2 pages, no placeholders or ellipsis truncation.")
+          PY
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
         with:
